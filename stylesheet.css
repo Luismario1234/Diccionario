@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+body{
+    background-color:#efe2c0;
+    background-image:
+    radial-gradient(rgba(0,0,0,.04) 1px, transparent 1px);
+    background-size:6px 6px;
+
+    font-family:'EB Garamond', serif;
+    color:#2e2015;
+    min-height:100vh;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+.barra-nav{
+    background:#3a2415;
+    border-bottom:4px double #c9a45b;
+
+    padding:18px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+}
+
+.barra-nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.barra-nav a{
+    color:#f5e8c7;
+    text-decoration:none;
+    font-family:'Cinzel', serif;
+    font-size:1.1rem;
+    letter-spacing:1px;
+}
+
+.barra-nav a:hover{
+    color:#d6b16b;
+}
+
+.buscador{
+    display:flex;
+    gap:10px;
+}
+
+.buscador input{
+    background:#f8f1dd;
+    border:2px solid #a67c52;
+    padding:10px 15px;
+}
+
+.buscador button{
+    background:#7b5733;
+    color:white;
+    border:none;
+    padding:10px 20px;
+}
+
+.buscador button:hover{
+    background:#5f4124;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.banner{
+    max-width:1200px;
+    margin:40px auto;
+    text-align:center;
+
+    background:#f8f1dd;
+    border:3px solid #b58c52;
+
+    padding:50px 30px;
+
+    box-shadow:
+    0 0 20px rgba(0,0,0,.1),
+    inset 0 0 40px rgba(0,0,0,.05);
+}
+
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:4px;
+    color:#7b5733;
+    font-weight:bold;
+}
+
+.banner h1{
+    font-family:'Cinzel', serif;
+    font-size:3.2rem;
+    margin:15px 0;
+}
+
+.filete{
+    width:250px;
+    height:4px;
+    margin:20px auto;
+    background:#b58c52;
+}
+
+.banner p{
+    font-size:1.3rem;
+}
+
+/* =========================
+   ALFABETO
+========================= */
+
+.alfabeto{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.alfabeto span{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f8f1dd;
+    border:1px solid #a67c52;
+
+    font-weight:bold;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.alfabeto a{
+    text-decoration:none;
+    color:#2e2015;
+    padding:10px 14px;
+    margin:4px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.alfabeto a:hover{
+    background:#2e2015;
+    color:white;
+}
+
+.alfabeto .activa{
+    background:#2e2015;
+    color:white;
+}
+
+/* =========================
+   CONTENEDOR TABLA
+========================= */
+
+.container-fluid{
+    max-width:1400px;
+}
+
+.table-responsive{
+    background:#f8f1dd;
+    padding:25px;
+
+    border:3px solid #b58c52;
+
+    box-shadow:
+    0 0 20px rgba(0,0,0,.08),
+    inset 0 0 30px rgba(0,0,0,.04);
+}
+
+/* =========================
+   TABLA BOOTSTRAP
+========================= */
+
+.table{
+    margin-bottom:0 !important;
+    border-color:#a67c52 !important;
+}
+
+.table thead{
+    background:#3a2415 !important;
+}
+
+.table thead th{
+    color:#f8f1dd !important;
+    font-family:'Cinzel', serif;
+    font-size:1.1rem;
+    letter-spacing:1px;
+    border-color:#a67c52 !important;
+}
+
+.table tbody td{
+    background:#fdf8eb !important;
+    color:#2e2015;
+    border-color:#ccb083 !important;
+
+    vertical-align:middle;
+
+    white-space:normal;
+    word-break:break-word;
+}
+
+.table-striped tbody tr:nth-child(even) td{
+    background:#f4e7c7 !important;
+}
+
+.table-hover tbody tr:hover td{
+    background:#e9d6aa !important;
+}
+
+/* =========================
+   TEXTO LARGO
+========================= */
+
+td{
+    max-width:400px;
+    overflow-wrap:break-word;
+}
+
+/* =========================
+   EFECTO LIBRO
+========================= */
+
+.banner,
+.table-responsive{
+    position:relative;
+}
+
+.banner::before,
+.table-responsive::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(120,70,20,.08),
+    transparent 30%),
+
+    radial-gradient(circle at bottom right,
+    rgba(120,70,20,.08),
+    transparent 30%);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .barra-nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .barra-nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .banner h1{
+        font-size:2rem;
+    }
+
+    .table{
+        font-size:.95rem;
+    }
+
+    .alfabeto span{
+        width:38px;
+        height:38px;
+    }
+}
