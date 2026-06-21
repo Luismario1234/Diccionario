@@ -1,0 +1,80 @@
+body{
+    background: #c48c1e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+.barra-nav{
+    background:#3a2415;
+    border-bottom:4px double #c9a45b;
+
+    padding:18px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+}
+
+.barra-nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.barra-nav a{
+    color:#f5e8c7;
+    text-decoration:none;
+    font-family:'Cinzel', serif;
+    font-size:1.1rem;
+    letter-spacing:1px;
+}
+
+.barra-nav a:hover{
+    color:#d6b16b;
+}
+
+.buscador{
+    display:flex;
+    gap:10px;
+}
+
+.buscador input{
+    background:#f8f1dd;
+    border:2px solid #a67c52;
+    padding:10px 15px;
+}
+
+.buscador button{
+    background:#7b5733;
+    color:white;
+    border:none;
+    padding:10px 20px;
+}
+
+.buscador button:hover{
+    background:#5f4124;
+}
+
+.hero{
+    margin-top: 80px;
+}
+
+.hero-box{
+    background: #efe7d4;
+    border: 1px solid #c9a063;
+    padding: 60px 40px;
+}
+
+.feature-card{
+    background: white;
+    padding: 30px;
+}
