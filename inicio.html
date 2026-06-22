@@ -1,0 +1,151 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Bienvenida - Diccionario Técnico</title>
+    <!-- Importamos las nuevas tipografías elegantes (Playfair Display para títulos, Lora para el texto) -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        /* Estilos globales */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: 'Lora', serif; /* Nuevo estilo de letra para todo el cuerpo */
+            color: #2b2b2b;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ENCABEZADO: Estilo clásico de la imagen */
+        .header-banner {
+            background-color: #f6f0dd; /* Tono crema exacto */
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(184, 157, 114, 0.3);
+        }
+
+        /* Líneas verticales sutiles en los extremos del encabezado */
+        .header-banner::before,
+        .header-banner::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: rgba(184, 157, 114, 0.4);
+        }
+        .header-banner::before { left: 20px; }
+        .header-banner::after { right: 20px; }
+
+        /* Subtítulo superior */
+        .subtitulo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #b89d72; /* Dorado/marrón claro */
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        /* Título principal con la nueva fuente Playfair Display */
+        .titulo {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #1e1e1e;
+            margin: 0 0 20px 0;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* Línea decorativa inferior */
+        .linea-separadora {
+            width: 150px;
+            height: 1px;
+            background-color: #b89d72;
+            margin: 0 auto;
+        }
+
+        /* CONTENEDOR DEL TEXTO CON DOS BORDES LATERALES */
+        .contenido-carta {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 10px 35px; /* Espacio equilibrado a la izquierda y derecha */
+            line-height: 1.9;
+            font-size: 17px;
+            color: #333333;
+            flex: 1;
+            
+            /* Dos bordes laterales idénticos */
+            border-left: 2px solid #b89d72;
+            border-right: 2px solid #b89d72;
+        }
+
+        .contenido-carta p {
+            margin-bottom: 22px;
+            text-align: justify;
+        }
+
+        .contenido-carta strong {
+            color: #000000;
+            font-weight: 500;
+        }
+
+        /* Estilo para los bloques destacados o firmas */
+        .firma {
+            margin-top: 40px;
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 20px;
+            font-style: italic;
+            color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado clásico adaptado -->
+    <header class="header-banner">
+        <div class="subtitulo">Arquitectura de Software - Bases de Datos</div>
+        <h1 class="titulo">Carta de Bienvenida</h1>
+        <div class="linea-separadora"></div>
+    </header>
+
+    <!-- Cuerpo de la carta de bienvenida con dos bordes laterales y nueva tipografía -->
+    <main class="contenido-carta">
+        <p>Estimado profesional, estudiante o entusiasta de la tecnología:</p>
+        
+        <p>En el mundo de la tecnología, casi todo el contenido importante, las herramientas y
+             la documentación global están en inglés. Por eso, si estudias o trabajas en Arquitectura
+              de Software o Bases de Datos, dominar el vocabulario técnico internacional es clave para
+               tu crecimiento y éxito profesional.
+
+        <p>Este diccionario de español a inglés fue creado pensando en tu día a día. Cada vez que
+             busques una palabra, obtendrás tres datos esenciales de forma inmediata:
+        
+        <p style="padding-left: 15px;">
+            1. <strong>La Palabra Clave:</strong> El concepto exacto en español utilizado en el diseño y modelado de sistemas.<br>
+            2. <strong>La Traducción:</strong> Su equivalente preciso en inglés técnico, garantizando que puedas comunicarte con fluidez en equipos globales y documentación internacional.<br>
+            3. <strong>La Definición:</strong> Una explicación conceptual clara, rigurosa y alineada con los estándares de la industria, asegurando que comprendas no solo el término, sino su aplicación en la arquitectura y persistencia de datos.
+        </p>
+        
+        <p>No importa si estás diseñando una estructura de microservicios, optimizando el rendimiento de una base de datos o creando flujos de información,
+             esta herramienta estará lista para resolver tus dudas rápidamente.
+        
+        <p>Te invitamos a explorar los términos, dominar el vocabulario técnico internacional y elevar la calidad de tu comunicación arquitectónica. ¡Mucho éxito en tu camino hacia la excelencia técnica!</p>
+        
+        <!-- Firma de cierre -->
+        <div class="firma">
+            <p>Atentamente<br>
+            <strong>Desarrollo de Software
+            </strong></p>
+        </div>
+    </main>
+
+</body>
+</html>
