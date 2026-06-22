@@ -1,6 +1,6 @@
 body{
-    background: #c48c1e;
-    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -78,3 +78,13 @@ body{
     background: white;
     padding: 30px;
 }
+
+/* Título principal con la nueva fuente Playfair Display */
+        .titulo {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #1e1e1e;
+            margin: 0 0 20px 0;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
